@@ -1,55 +1,47 @@
-# Python
+# ================================
+# VisionTrace - Git Ignore
+# ================================
+
+# Python cache
 __pycache__/
 *.py[cod]
 *.pyo
-*.pyd
+
+# Python virtual environments
+.venv/
 venv/
 env/
-.venv/
-ENV/
-.pytest_cache/
-.coverage
-htmlcov/
+backend/.venv/
+
+# Environment / secrets
+.env
+*.env
+!.env.example
+
+# Generated backend files
+backend/uploads/*
+backend/results/*
+
+# Keep empty directories
+!backend/uploads/.gitkeep
+!backend/results/.gitkeep
 
 # Node
 node_modules/
 frontend/node_modules/
-dist/
-build/
-frontend/.vite/
 
-# Environment
-.env
-.env.*
-!.env.example
-
-# Uploaded/generated data
-backend/uploads/*
-!backend/uploads/.gitkeep
-backend/results/*
-!backend/results/.gitkeep
-
-# Model files
-*.h5
-*.hdf5
-*.onnx
-*.pt
-*.pth
-*.pb
-*.weights
-*.tflite
-
-# IDE
-.vscode/
-.idea/
-
-# OS
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# Jupyter
-.ipynb_checkpoints/
+# Vite build
+frontend/dist/
 
 # Logs
 *.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+
+# Temporary project inspection
+structure.txt

@@ -11,7 +11,7 @@ import {
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const API = "https://visiontrace-3vyk.onrender.com";
+const API = "http://localhost:8000";
 
 const pipeline = [
   "Input image",

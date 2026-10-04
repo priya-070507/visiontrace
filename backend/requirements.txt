@@ -1,10 +1,13 @@
 fastapi==0.115.6
-uvicorn[standard]==0.34.0
+uvicorn==0.34.0
 python-multipart==0.0.20
-opencv-python==4.10.0.84
-numpy==2.1.3
-Pillow==11.0.0
 
-# Optional but required for DeepFace and FaceNet modules:
+numpy==2.1.3
+opencv-python-headless==4.10.0.84
+
 deepface==0.0.93
-tensorflow==2.18.0
+tensorflow==2.21.0
+tf-keras==2.21.0
+
+keras-facenet==0.3.2
+scikit-learn==1.9.1
